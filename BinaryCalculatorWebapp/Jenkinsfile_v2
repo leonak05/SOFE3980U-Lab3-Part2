@@ -21,7 +21,7 @@ pipeline {
               containers:
               # Use service account that can deploy to all namespaces
               - name: gcloud
-                image:  google/cloud-sdk:latest
+                image:  maven:3.9.4-openjdk-21
                 command:
                 - cat
                 tty: true
